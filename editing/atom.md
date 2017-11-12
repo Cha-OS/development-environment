@@ -1,3 +1,7 @@
+# Multi-cursor
+
++ [multi cursor in Atom with TypeScript and Angular](https://www.youtube.com/watch?v=PuZMbzvNgTg)
+
 # Settings/Customization
 
 + https://atom.io/docs/latest/using-atom-basic-customization
@@ -46,25 +50,6 @@
 
 ### Typescript
 
-#### atom-typescript
-
-+ **Atom TypeScript**
-+ https://atom.io/packages/atom-typescript
-+ JavaScript developers can now just open a .ts file and start hacking away like they are used to. No grunt no Visual Studio. Just pure coding
-+ Features
-  + **Autocomplete**
-  + Live error analysis
-  + Type information on hover
-  + Compile on save
-  + **Project Context Support (`tsconfig.json`)**
-  + Project Build Support
-  + `package.json` Support
-  + **Goto Declaration**
-  + **Find References**
-  + Block comment and uncomment
-  + **Rename refactoring**
-  + Common Snippets
-
 #### IDE-TypeScript package
 
 + ide-typescript
@@ -86,6 +71,26 @@
 + atom-ide-ui
 + https://atom.io/packages/atom-ide-ui
 + A collection of Atom UIs to support language services as part of Atom IDE, designed for use with packages built on top of [atom-languageclient](https://github.com/atom/atom-languageclient)
++ NOTE: It will ask you
+
+#### Atom TypeScript
+
+- atom-typescript
+- https://atom.io/packages/atom-typescript
+- JavaScript developers can now just open a .ts file and start hacking away like they are used to. No grunt no Visual Studio. Just pure coding
+- Features
+  - **Autocomplete**
+  - Live error analysis
+  - Type information on hover
+  - Compile on save
+  - **Project Context Support (`tsconfig.json`)**
+  - Project Build Support
+  - `package.json` Support
+  - **Goto Declaration**
+  - **Find References**
+  - Block comment and uncomment
+  - **Rename refactoring**
+  - Common Snippets
 
 #### TypeScript language support in Atom
 
@@ -136,6 +141,20 @@
   - `module.ts`
   - `component.html`
   - `component.scss`
+
+#### atom-angular-2
+
++ angular-2
++ https://atom.io/packages/angular-2
++ Currently supports angular-cli projects only
++ Features
+  + Syntax highlighting for Typescript
+  + Autocompletes
+    - Typescript
+    - Angular
+    - Your App classes
+  + **Resolves Imports**
+  + Snippets
 
 ####Angular 2 TypeScript Snippets for Atom
 
@@ -324,13 +343,24 @@ npm install tern-node-express
 
 - [Feature Request: Source Code Navigator for classes, methods, variables etc](https://discuss.atom.io/t/feature-request-source-code-navigator-for-classes-methods-variables-etc/11225)
 
-### Tree viewers
+### Symbols view
 
-#### symbols-tree-view
+#### Symbols View package
+
++ symbols-view
++ https://atom.io/packages/symbols-view
++ Display the list of functions/methods in the editor.
++ Problems with TypeScript:
+  + https://github.com/atom/symbols-view/issues/9
+  + https://atom.io/packages/symbol-gen
+
+#### symbols-tree-view package
 
 - symbols-tree-view
 - https://atom.io/packages/symbols-tree-view
 - Symbols Tree View for Atom.io, just like taglist or tagbar for VIM.
+- Problems with TypeScript:
+  - https://github.com/xndcn/symbols-tree-view/issues/101
 
 ### Cursor
 
