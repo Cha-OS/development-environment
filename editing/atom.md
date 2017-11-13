@@ -12,6 +12,10 @@
   + Global
     + Atom > Open Your Config
       + editor: `softWrap: true`
++ make .gitignore files visible
+  + http://blog.lukebennett.com/2015/09/21/show-hidden-files-in-atom-sidebar/
+  + https://stackoverflow.com/questions/36253907/dont-ignore-node-modules-in-atom
+  + In Atom main settings, uncheck "Exclude VCS ignored Paths"
 + Keyboard (keymap.cson), not working well :(
 ```json
 'body':
@@ -65,6 +69,8 @@
   - **Go to definition**
   - Hover
   - Signature help
++ **PROBLEMS**: 
+  + If one of imports in a file is not correct (wrong path or error with imports of that import) then all imports in the file are reported as not correct
 
 ##### atom-ide-ui
 
