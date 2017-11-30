@@ -119,6 +119,22 @@ Goo
 
 [GOTO 2016 • What I Wish I Had Known Before Scaling Uber to 1000 Services • Matt Ranney](https://www.youtube.com/watch?v=kb-m2fasdDY)
 
-+ ​
++ Heatmaps
++ any kind of representation on speed
++ a way to understand high-level picture
++ auto-generated and non-service specific dashboard
++ Tracing
+  + Z… or OpenTracing
 
 [Kubernetes in production - blue-green deployment, auto scaling and deployment automation](https://www.youtube.com/watch?v=-Ci4vd4rh4M)
+
+
+
+# Clouds
+
+## Nextcloud vs ownCloud
+
++ https://project-management.zone/system/nextcloud,owncloud
++ https://nextcloud.com/blog/3-reasons-to-upgrade-your-owncloud-instance-to-nextcloud-and-how-easy-it-is/
++ https://nextcloud.com/compare/
++ ​
