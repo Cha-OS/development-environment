@@ -343,7 +343,12 @@ npm install tern-node-express
 + Compares two files and shows the diff
 
 
+#### Local History for Atom
 
++ local-history
++ https://atom.io/packages/local-history
++ Atom package for maintaining a local history of files (history of your changes to the code files).
++ https://discuss.atom.io/t/local-history-of-file-changes/1090/9
 
 ### Code Overview
 
@@ -532,10 +537,15 @@ Timekeeper
 
 ### Git
 
-#### Git
++ Core
+  + [Git Integration](http://blog.atom.io/2014/03/13/git-integration.html)
 
+#### Git-Plus package
+
++ git-plus
 + https://atom.io/packages/git-plus
-  + Cmd-Shift-H
++ vim-fugitive like package for atom. make commits and other git things without the terminal
++ Cmd-Shift-H
 
 
 #### git-blame
@@ -544,6 +554,39 @@ Timekeeper
 + https://atom.io/packages/git-blame
 + Toggle git-blame annotations in Atom
 
+
+#### Git History Package for Atom
+
++ git-history
++ https://atom.io/packages/git-history
++ View previous versions of any file known to git. By default, the plugin will now show a diff with the selected version. This can be disabled in the settings.
++ crashing on our OSX machine
+
+#### git-time-machine package
+
++ git-time-machine
++ https://atom.io/packages/git-time-machine
++ git-time-machine is a package for [Atom](https://atom.io/) that allows you to travel back in time! It shows visual plot of commits to the current file over time and you can click on it on the timeplot or hover over the plot and see all of the commits for a time range.
+
+#### Git Log Package
+
++ git-log
++ https://atom.io/packages/git-log
++ Git-log is a package for [Atom](http://atom.io/) that creates a graph of your git commits and shows commit related information for you on the editor.
+
+#### Tree View Git Status package
+
++ tree-view-git-status
++ https://atom.io/packages/tree-view-git-status
++ Show the Git repository status in the Atom tree-view.
+
+#### Other
+
++ https://atom.io/packages/better-git-blame
++ https://atom.io/packages/git-status
++ https://atom.io/packages/git-diff-details
++ Discussion
+  + [Displaying code changes from last commit in IDE](https://discuss.atom.io/t/displaying-code-changes-from-last-commit-in-ide/26890)
 
 
 
@@ -584,3 +627,17 @@ Timekeeper
 http://unicode-table.com/en/#0060
 https://github.com/atom/language-html/issues/59
 https://github.com/atom/atom/issues/6940
+
+
+
+
+
+# Interaction
+
+## Search
+
+### through new line
+
+- https://stackoverflow.com/questions/41497325/multiline-search-and-replace-in-atom-editor
+  - `(.|\r?\n)*?`
+- https://github.com/atom/find-and-replace/issues/303

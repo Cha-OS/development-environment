@@ -12,6 +12,13 @@
 
 # Terminal
 
-# Keeping window tabs and command
+## Keeping window tabs and command
 
 + Windows > Save windows as group
+  + `Restore all commands`
++ tabs will be recovered with each tab commands separately restored
+
+## Tab names
+
++ CMD + SHIFT + I
+  + you can set the name of tab and window (when tab is selected)
