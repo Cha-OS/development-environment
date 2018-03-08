@@ -321,6 +321,18 @@ npm install tern-node-express
 }
 ```
 
+### Text
+
+#### sort-lines
+
++ sort-lines
++ https://atom.io/packages/sort-lines
++ Sorts your lines in Atom. Never gets tired.
++ **select** lines you want to sort
++ `CMD+SHIFT+P`
+  + type: `sort`
+  + press ENTER
+
 ### Files
 
 ####split-diff

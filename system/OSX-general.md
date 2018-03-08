@@ -3,10 +3,16 @@
 ## Conversion - Pandoc
 
 + https://pandoc.org/
+  + https://pandoc.org/demos.html
 + If you need to **convert files** from one markup format into another, pandoc is your **swiss-army knife**. 
 + HTML -> MD (Markdown)
   + `pandoc test.html -o test.md`
   + or with preserving non-MD HTML-tags: `pandoc test.html -o test.md --parse-raw`
++ EPUB -> PDF
+  + `pandoc test.epub --toc -o test.pdf`
+  + https://www.reddit.com/r/haskell/comments/26w2f5/pandoc_howto_for_epub_pdf_conversion/
+  + https://askubuntu.com/questions/299747/converting-epub-files-to-pdf-format
+  + https://github.com/jgm/pandoc/issues/2658
 
 # Imagging
 
