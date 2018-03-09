@@ -1,8 +1,24 @@
 # Intro and Comparison
 
+UMU
+
++   https://idp.umu.se/saml2/idp/SSOService.php?SAMLRequest=fVFbT4MwFP4rpO%2BjhTlkzSDB7cEl0y0DffDFFHaUJtDWnuLl3wtjxpmYvbbf%2FSxQtI3hWedqtYe3DtB5n22jkB8%2FEtJZxbVAiVyJFpC7iufZ3YaHPuPGaqcr3RAvQwTrpFZLrbBrweZg32UFD%2FtNQmrnDHJKsTPWRyUrH4HmtSxL3YCrfURNB82Q7rZ5QbxVH0IqMcj9kuXB%2BF3bDdQhWTg80Dzfnox8UxvirVcJeZ5BcDUvp%2FE8AHYdsaiKIgjnL%2BU0iJioylkPQ%2BxgrdAJ5RISsiCesOmExQWLOQv5jD0Rb3fqdiPVQarXy0OUIwj5bVHsJmOLR7B4bNADSLoYQvOjsT0b%2BLKs%2BFmVpP9tuKBnoqOD4fe9ynq1042svrysafTH0oJwkJCA0HSk%2FL13%2Bg0%3D&RelayState=cookie%3A1520496147_2971
++   ​
+
+## Stacks
+
++   https://stackshare.io/facebook/facebook
++   https://stackshare.io/google/google
++   https://stackshare.io/uber
++   http://techstacks.io/slack
++   https://www.quora.com/What-is-the-tech-stack-behind-Slack
++   [uber search](https://www.google.ru/search?newwindow=1&ei=cfKgWuzOGszX6QSdkInoCA&q=uber+stack+technology+devops&oq=uber+stack+technology+devops&gs_l=psy-ab.3...9292.9656.0.9790.4.4.0.0.0.0.77.262.4.4.0....0...1c.1.64.psy-ab..0.0.0....0.YuEKN9FlR0Y)
++   [Colabo.Space - DevOps - Diagram](https://www.draw.io/?state=%7B%22folderId%22:%220B-CAPfjq-r7CQ2doV1FZNGwxcGM%22,%22action%22:%22create%22,%22userId%22:%22106768238102316613023%22%7D#G1H3Wc_tMZk6A2FCBybbnnmVnD2aAR8sQx)
+
 ## Sources
 
 +   https://wiki.openstack.org/wiki/Fuel
++   [How does your organisation deploy cloud environments? Is it completely automated? Is it completely “Infrastructure as Code”?](https://opencredo.com/cloud-bootstrapping/)
 +   [Comparing top DevOps tools: Docker vs Kubernetes vs Puppet vs Chef vs Ansible](https://www.znetlive.com/blog/compare-top-devops-tools-docker-kubernetes-puppet-chef-ansible/)
 +   [Vagrant, Docker, Puppet, Chef](https://stackoverflow.com/questions/41471832/vagrant-docker-puppet-chef)
 +   [Does Docker make Ansible and similar orchestration tools redundant?](https://www.reddit.com/r/docker/comments/5mfx0e/does_docker_make_ansible_and_similar/)
@@ -71,6 +87,8 @@
 +   Kubernetes allows DevOps to efficiently fulfill customer’s demands by deploying applications predictably and quickly, **scaling** them, launching new features and **limiting hardware usage** to only the needed resources.
 +   Kubernetes is **portable **and can be used with public, private, hybrid, multi-cloud environments; **extensible** with being pluggable, modular, composable, hookable; and is **self-healing** with features like auto-replication, auto-placement, auto-scaling and auto-restart
 
+
+
 ### Nagios
 
 +   https://www.nagios.org/
@@ -97,6 +115,11 @@
 +   Terraform
 +   Marathon
 
+## Terraform
+
+-   https://www.terraform.io/
+-   Write, Plan, and Create Infrastructure as Code
+
 ## Differences
 
 +   Compose, Marathon and Terraform all stop at the level of **declaring the structures**, letting plugins or “something else” orchestrate the coordination for the interesting tasks of a red/green upgrade or rolling upgrade, where 
@@ -107,6 +130,12 @@
 +   Puppet, Chef, Ansible, and SaltStack are all focused on the world of **configuring services within a single** virtual (or physical) machine – the “**install and configure**” and “**start it running**”
     +   and didn’t include the concept of handling a **failure of the machine**
     +   these systems were created **long before cloud computing** was a reality, and the idea of asking for another machine wasn’t a few seconds of work behind an API
+
+### Kubernetes (K8s) vs Docker Swarm
+
++   [Kubernetes vs Docker Swarm](https://platform9.com/blog/kubernetes-docker-swarm-compared/)
++   [Swarm mode overview](https://docs.docker.com/engine/swarm/)
++   ​
 
 ## Scenarios
 
@@ -188,6 +217,10 @@ Scenario 2 ([src](https://www.reddit.com/r/docker/comments/5mfx0e/does_docker_ma
         +   Kubernetes has embraced **Container Network Interface (CNI)**. There’s not enough room to explain the differences here - but they are significant.
 +   THE CONTAINER NETWORKING LANDSCAPE: ***CNI*** FROM COREOS AND ***CNM*** FROM DOCKER
 +   Self-Hosted Kubernetes
+
+### KubeNow
+
+https://github.com/kubenow/KubeNow
 
 ### OpenStack
 
@@ -401,11 +434,6 @@ touch docker-compose.yml
 +   [September 27, 2016 - Puppet vs. Chef vs. Ansible vs. SaltStack](https://www.intigua.com/blog/puppet-vs.-chef-vs.-ansible-vs.-saltstack)
 +   [June 19, 2016 - Marathon, Kubernetes, Docker Compose, Terraform, Puppet, Chef, Ansible, SaltStack, and Juju](https://rhonabwy.com/2016/06/19/marathon-kubernetes-docker-compose-terraform-puppet-chef-ansible-saltstack-and-juju/)
 
-## Terraform
-
-+   https://www.terraform.io/
-+   Write, Plan, and Create Infrastructure as Code
-
 ## Vagrant
 
 +   https://www.vagrantup.com/
@@ -428,6 +456,43 @@ touch docker-compose.yml
 +   https://puppet.com/products/how-puppet-works
 +   https://puppet.com/products/emulator
 +   https://puppet.com/download-learning-vm
+
+## HEAT
+
+[HEAT or Ansible in OpenStack? Both!](http://software.danielwatrous.com/heat-or-ansible-in-openstack-both/)
+
+**HEAT** is designed to capture details related to infrastructure and accommodate provisioning of that infrastructure on OpenStack. **CloudFormation** does the same thing in AWS and **Terraform** is an abstraction that has providers for both OpenStack and AWS (and many others).
+
+## CloudInit
+
++   https://cloud-init.io/
++   http://cloudinit.readthedocs.io/en/latest/
++   [Provide user data to instances @ OpenStack](https://docs.openstack.org/nova/latest/user/user-data.html)
++   [Launch an instance from an image @OpenStack](https://docs.openstack.org/ocata/user-guide/cli-nova-launch-instance-from-image.html)
++   [Using Cloud-Init in an OpenStack Environment to Automate the Initialization of vSRX Instances](https://www.juniper.net/documentation/en_US/vsrx/topics/task/configuration/security-vsrx-cloud-init-support.html)
+
+***Cloud-init*** is the [Ubuntu package](https://launchpad.net/ubuntu/+source/cloud-init) that handles early initialization of a cloud instance. It is installed in the [Ubuntu Cloud Images](http://cloud-images.ubuntu.com/releases/) and also in the official Ubuntu images available on **EC2**.
+
+Some of the things it configures are:
+
+-   setting a default locale
+-   setting hostname
+-   generate ssh private keys
+-   adding ssh keys to user's .ssh/authorized_keys so they can log in
+-   setting up ephemeral mount points
+
+cloud-init's behavior can be configured via **user-data**. [User-data](http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1085) can be given by the user at instance launch time. This is done via the `--user-data` or `--user-data-file` argument to [ec2-run-instances](http://docs.amazonwebservices.com/AWSEC2/latest/CommandLineReference/ApiReference-cmd-RunInstances.html)
+
+***User data*** is a blob of data that the user can specify when they launch an instance. The instance can access this data through the metadata service or config drive. Commonly used to pass **a shell script** that the instance runs on boot.
+
+For example, one application that uses user data is the [**cloud-init**](https://help.ubuntu.com/community/CloudInit) system, which is an open-source package from Ubuntu that is available on various Linux distributions and which handles ***early initialization of a cloud instance***.
+
+You can place user data in a local file and pass it through the **`—user-data <user-data-file>`** parameter at instance creation.
+
+```
+$ openstack server create --image ubuntu-cloudimage --flavor 1 \
+  --user-data mydata.file VM_INSTANCE
+```
 
 ## Ansible
 
@@ -501,6 +566,20 @@ Ansible is an open source  IT-automation engine that can be used to automate pro
 +   Cloud Modules - Openstack
     +   http://docs.ansible.com/ansible/latest/list_of_cloud_modules.html#openstack
 
+#### Keys
+
+-   [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+-   [Specifying ssh key in ansible playbook file](https://stackoverflow.com/questions/44734179/specifying-ssh-key-in-ansible-playbook-file)
+-   [how to define ssh private key for servers fetched by dynamic inventory in files](https://stackoverflow.com/questions/33795607/how-to-define-ssh-private-key-for-servers-fetched-by-dynamic-inventory-in-files)
+
+Procedure:
+
+-   generate a new key pair for ansimble through the open cloud interface
+    -   or generate a **SSH key-pair**, # ssh-keygen –t rsa
+-   download the private key and store it safely as `orchestration-iaas-no.pem`
+
+#### Orchestration
+
 You have to have at least two machines/nodes. One for Ansible running (either local or on the cloud) and other (on the cloud) to deploy with Ansible on.
 
 Regarding the speed and collaboration-wise it is better to have both orchestration node on the OpenStack as well
@@ -508,7 +587,7 @@ Regarding the speed and collaboration-wise it is better to have both orchestrati
 -   `orchestrator`
 -   `colabo-space-1`
 
-`hosts`:
+Open the `<ansible-project>/hosts` file and fill the **private IP addresses** of nodes and private key locations:
 
 ```sh
 # each speciffic host
@@ -527,7 +606,26 @@ colabo-space-1 ansible_connection=ssh ansible_user=ansible
 colabo-ghost ansible_connection=ssh ansible_user=ansible
 ```
 
-on orchestrator
+##### Node configuration
+
+###### Accounts
+
+Create the ansible account on orchestrator node and each node we want to access from ansible
+
+-   Add the orchestration **public key** to all  “**authorized_keys**” file
+-   Make sure you **can login** to the machines
+-   Also check that the user account has the “**sudo**” privileges
+
+###### Python
+
+Each node should have at least python and python-simplejson
+
+**NOTE**:
+
++   Ansible’s “raw” module (for executing commands in a quick and dirty way) and the script module don’t even need that. So technically, you can use Ansible to install python-simplejson using the raw module, which then allows you to use everything else.
+
+
++   If you need to bootstrap these remote systems by installing Python 2.X, using the ‘raw’module will be able to do it remotely. For example, would install Python2.X and the simplejson module needed to run ansible and its modules.
 
 ```sh
 #for ansible user
@@ -535,11 +633,11 @@ joe ~/.ssh/orchestration-iaas-no.pem
 chmod 0600 ~/.ssh/orchestration-iaas-no.pem
 ```
 
+##### Install ansible on orchestrator
 
+copy the `<ansible-project>` directory to the orchestrator node
 
-copy the “ansible-spark” directory to the ansible-node.
-
-Run the ***`install_ansible.sh`*** script. 
+Run the ***`install_ansible.sh`*** script
 
 ```sh
 chmod a+x install_ansible.sh
@@ -561,28 +659,14 @@ sudo apt-get update
 sudo apt-get install ansible
 ```
 
-Keys
-
-+   [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-+   [Specifying ssh key in ansible playbook file](https://stackoverflow.com/questions/44734179/specifying-ssh-key-in-ansible-playbook-file)
-+   [how to define ssh private key for servers fetched by dynamic inventory in files](https://stackoverflow.com/questions/33795607/how-to-define-ssh-private-key-for-servers-fetched-by-dynamic-inventory-in-files)
-
-Procedure:
-
-+   generate a new key pair for ansimble through the open cloud interface
-+   download the private key and store it safely `orchestration-iaas-no.pem`
 +   copy the private key to the orchestrator node under ansimble user account `~/.ssh/orchestration-iaas-no.pem`
-+   ​
+    +   set its access rights to `0600`
 
-Then configure the Ansible setup with the following steps (all executed on the **ansible-node**):
+#### Testing
 
-1.  Generate a **SSH key-pair**, # ssh-keygen –t rsa
-2.  Add the **public key** to both of the hosts “**authorized_keys**” file. 
-3.  Make sure you **can login** to the machines. Also check that the user account has the “**sudo**” privileges.
-4.  Open the `ansible-spark/hosts` file and fill the **private IP addresses** of the nodes.  
-5.  Goto `ansible-spark` directory and **execute** the following command:
+Goto `<ansible-project>` directory and **execute** the following command:
 
-```bash
+```sh
 # pinging
 ansible -m ping -i hosts colabo-space-1 --private-key ~/.ssh/orchestration-iaas-no.pem
 ansible -m ping -i hosts colabo-spaces --private-key ~/.ssh/orchestration-iaas-no.pem
@@ -590,13 +674,11 @@ ansible -m ping -i hosts all --private-key ~/.ssh/orchestration-iaas-no.pem
 
 # echo
 ansible -i hosts all -a "/bin/echo hello"
- 
+
+# spark
 ansible-playbook -i hosts -s playbooks/spark-deployment.yml --private-key ~/.ssh/orchestration-iaas-no.pem
+# The complete deployment will take approximately 20 to 30 minutes. Once the installation is finished you can check the cluster status using the following URL: http://<floating-IP-sparkmaster>:8080
 ```
-
-The complete deployment will take approximately 20 to 30 minutes. Once the installation is finished you can check the cluster status using the following URL: 
-
-http://<floating-IP-sparkmaster>:8080
 
 ### Questions:
 
