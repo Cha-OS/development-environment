@@ -47,6 +47,14 @@ networksetup -getdnsservers Ethernet
 + http://kb.mit.edu/confluence/display/istcontrib/How+to+check+DNS+settings+on+Mac+OS+X+10.7
 + http://osxdaily.com/2011/06/03/get-dns-server-ip-command-line-mac-os-x/
 
+# Sharing local server
+
++ [DNSdynamic](https://www.dnsdynamic.org/?host=colabo&domain=1)
++ noip.com
+  + [Free Dynamic DNS : Getting Started Guide](https://www.noip.com/support/knowledgebase/getting-started-with-no-ip-com/)
+  + https://www.noip.com/sign-up
+  + https://www.noip.com/download?page=mac
+
 # cURL command
 
 ### SPARQL (POST) example

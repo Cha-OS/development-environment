@@ -14,6 +14,35 @@
   + https://askubuntu.com/questions/299747/converting-epub-files-to-pdf-format
   + https://github.com/jgm/pandoc/issues/2658
 
+# System
+
+## Silencing “Your disk is almost full” notification
+
+[Silencing “Your disk is almost full” notification](https://apple.stackexchange.com/questions/254485/silencing-your-disk-is-almost-full-notification)
+
+```sh
+launchctl stop com.apple.diskspaced
+# or
+killall -STOP diskspaced
+```
+
+### Changing warning level and interval
+
+To change the user's default settings, here are some example commands:
+
+```sh
+defaults write com.apple.diskspaced freeSpaceWarningLevel 1
+defaults write com.apple.diskspaced warningInterval 3600
+defaults write com.apple.diskspaced debugLog 1
+defaults write com.apple.diskspaced checkAllVolumes 0
+```
+
+Then restart the service:
+
+```sh
+launchctl stop com.apple.diskspaced && launchctl start com.apple.diskspaced
+```
+
 # Imagging
 
 ## Conversion - ImageMagic
