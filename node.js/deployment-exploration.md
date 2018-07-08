@@ -3,7 +3,20 @@
 UMU
 
 +   https://idp.umu.se/saml2/idp/SSOService.php?SAMLRequest=fVFbT4MwFP4rpO%2BjhTlkzSDB7cEl0y0DffDFFHaUJtDWnuLl3wtjxpmYvbbf%2FSxQtI3hWedqtYe3DtB5n22jkB8%2FEtJZxbVAiVyJFpC7iufZ3YaHPuPGaqcr3RAvQwTrpFZLrbBrweZg32UFD%2FtNQmrnDHJKsTPWRyUrH4HmtSxL3YCrfURNB82Q7rZ5QbxVH0IqMcj9kuXB%2BF3bDdQhWTg80Dzfnox8UxvirVcJeZ5BcDUvp%2FE8AHYdsaiKIgjnL%2BU0iJioylkPQ%2BxgrdAJ5RISsiCesOmExQWLOQv5jD0Rb3fqdiPVQarXy0OUIwj5bVHsJmOLR7B4bNADSLoYQvOjsT0b%2BLKs%2BFmVpP9tuKBnoqOD4fe9ynq1042svrysafTH0oJwkJCA0HSk%2FL13%2Bg0%3D&RelayState=cookie%3A1520496147_2971
-+   ​
+
+## Diagrams
+
++   [Colabo.Space - DevOps - Diagram](https://www.draw.io/?state=%7B%22folderId%22:%220B-CAPfjq-r7CQ2doV1FZNGwxcGM%22,%22action%22:%22create%22,%22userId%22:%22106768238102316613023%22%7D#G1H3Wc_tMZk6A2FCBybbnnmVnD2aAR8sQx)
+
+IaaS, PaaS, SaaS
+
++   https://stackoverflow.com/questions/16820336/what-is-saas-paas-and-iaas-with-examples
++   http://www.hostingadvice.com/how-to/iaas-vs-paas-vs-saas/
++   http://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/
+
+<img src="https://i.stack.imgur.com/FBC8W.png"/>
+
+
 
 ## Stacks
 
@@ -13,6 +26,7 @@ UMU
 +   http://techstacks.io/slack
 +   https://www.quora.com/What-is-the-tech-stack-behind-Slack
 +   [uber search](https://www.google.ru/search?newwindow=1&ei=cfKgWuzOGszX6QSdkInoCA&q=uber+stack+technology+devops&oq=uber+stack+technology+devops&gs_l=psy-ab.3...9292.9656.0.9790.4.4.0.0.0.0.77.262.4.4.0....0...1c.1.64.psy-ab..0.0.0....0.YuEKN9FlR0Y)
++   [The Quora website is excellent. What system was it written with, is it WordPress? Who developed the website?](https://www.quora.com/The-Quora-website-is-excellent-What-system-was-it-written-with-is-it-WordPress-Who-developed-the-website)
 +   [Colabo.Space - DevOps - Diagram](https://www.draw.io/?state=%7B%22folderId%22:%220B-CAPfjq-r7CQ2doV1FZNGwxcGM%22,%22action%22:%22create%22,%22userId%22:%22106768238102316613023%22%7D#G1H3Wc_tMZk6A2FCBybbnnmVnD2aAR8sQx)
 
 ## Sources
@@ -33,6 +47,23 @@ UMU
 +   The DevOps **automate and monitor** the process of software creation, ranging from **integration**, **testing**, **releasing** to **deploying** and **managing** it. It reduces the development cycles, increases the frequency of deployment, and complements the objectives of a business
 
 ## Tools
+
+### Cloud Native Computing Foundation
+
+-   https://www.cncf.io/
+-   Sustaining and Integrating Open Source Technologies
+-   The Cloud Native Computing Foundation builds sustainable ecosystems and fosters a community around a constellation of high-quality projects that orchestrate containers as part of a microservices architecture.
+-   CNCF serves as the vendor-neutral home for many of the fastest-growing projects on GitHub, including Kubernetes, Prometheus and Envoy, fostering collaboration between the industry’s top developers, end users, and vendors.
+
+### Prometheus
+
+-   Monitoring
+-   data store
+-   visualization
+    -   graphit
+    -   graphona
+        -   dashboard build support
+        -   alerts 
 
 ### Docker
 
@@ -81,13 +112,29 @@ UMU
 ### Kubernetes
 
 +   https://kubernetes.io/
+
+-   rewritten OS friendly Borg
+    -   Borg
+        -   containers
+-   written in Go
+-   moves you from dealing with machines into dealing with cluster
+
 +   Where **Docker** provided the first step in helping developers build, ship and run software easily, **Kubernetes** has helped take a giant leap by helping DevOps **run containers in a cluster**, manage applications **across** different containers and **monitor** them effectively as well. It allows vendors to build systems using core Kubernetes technology as it is built on a **modular API core**.
 +   Kubernetes is an **open source** system that was developed by **Google**, and was later donated to **CNCF** (Cloud Native Computing Foundation).
 +   It helps developers deploy, scale and manage containerized applications with **automation**. 
 +   Kubernetes allows DevOps to efficiently fulfill customer’s demands by deploying applications predictably and quickly, **scaling** them, launching new features and **limiting hardware usage** to only the needed resources.
 +   Kubernetes is **portable **and can be used with public, private, hybrid, multi-cloud environments; **extensible** with being pluggable, modular, composable, hookable; and is **self-healing** with features like auto-replication, auto-placement, auto-scaling and auto-restart
 
-
+-   Kubernetes
+    -   Orchestration
+-   HELM
+    -   Package and deply
+    -   The Kubernetes Package Manager
+    -   https://github.com/kubernetes/helm
+    -   https://helm.sh/
+    -   Helm helps you **manage Kubernetes applications** — Helm Charts helps you define, install, and upgrade even the most complex Kubernetes application
+    -   Helm is a tool for managing Kubernetes charts. Charts are packages of pre-configured Kubernetes resources
+    -   Helm is a tool that streamlines installing and managing Kubernetes applications. Think of it like apt/yum/homebrew for Kubernetes
 
 ### Nagios
 
@@ -111,14 +158,24 @@ UMU
 -   Vagrant is a project that helps the **spawning of virtual machines**. It started as an **command line of VirtualBox**, something similar to **Gemfile for VM's**.
 -   You can choose the **base image** to start with, **network**, IP, **share folders** and put it all in a file that anyone can **reuse** to spawn the same configured machine. Vagrant has different extensions, provisioning options and VM providers. You can run a VirtualBox, VMware and it is extensible enough to be able to create instances on EC2.
 
-+   Juju
-+   Terraform
-+   Marathon
 
-## Terraform
+
+### Juju
+
+### Marathon
+
+### Terraform
 
 -   https://www.terraform.io/
 -   Write, Plan, and Create Infrastructure as Code
+
+## RPC/Messaging/flows
+
+### gRPC
+
+-   rewritten Stubby but using HTTP2 and protocol buffer 3
+    -   Stubby
+        -   RPC between containers
 
 ## Differences
 
@@ -135,7 +192,7 @@ UMU
 
 +   [Kubernetes vs Docker Swarm](https://platform9.com/blog/kubernetes-docker-swarm-compared/)
 +   [Swarm mode overview](https://docs.docker.com/engine/swarm/)
-+   ​
++   [Which Kubernetes features allowed it to become more popular than Docker Swarm?](https://www.quora.com/Which-Kubernetes-features-allowed-it-to-become-more-popular-than-Docker-Swarm)
 
 ## Scenarios
 
@@ -306,6 +363,14 @@ More info:
 + Docker announced Docker Swarm integration with Kubernetes too:
   + https://www.docker.com/kubernetes
 
+#### Ansible
+
++ [DEPLOYING DOCKER SWARM WITH ANSIBLE (Create and manage a Docker Swarm cluster using Ansible)](https://thisendout.com/2016/09/13/deploying-docker-swarm-with-ansible/)
++ http://docs.ansible.com/ansible/latest/docker_container_module.html
++ https://www.ansible.com/integrations/containers/docker
++ [Ansible and Docker: the Best Combination for an Efficient Software Product Management](https://medium.com/@cabot_solutions/ansible-and-docker-the-best-combination-for-an-efficient-software-product-management-28c86cfebe90)
++ [12 Steps to Managing Docker Swarm Using Ansible](https://caylent.com/manage-docker-swarm-using-ansible/)
+
 ### Python
 
 #### Python Image
@@ -400,6 +465,7 @@ touch docker-compose.yml
 ### Ghost
 
 +   OFFICIAL REPOSITORY
+    +   https://docs.ghost.org/docs/install
     +   https://hub.docker.com/_/ghost/
     +   Ghost is a free and open source blogging platform written in JavaScript
 
@@ -493,6 +559,13 @@ You can place user data in a local file and pass it through the **`—user-data 
 $ openstack server create --image ubuntu-cloudimage --flavor 1 \
   --user-data mydata.file VM_INSTANCE
 ```
+
+## Docker
+
++   https://wiki.openstack.org/wiki/Docker
++   https://www.mirantis.com/blog/need-openstack-use-docker/
++   https://docs.docker.com/machine/drivers/openstack/
++   ​
 
 ## Ansible
 
@@ -698,39 +771,6 @@ ansible-playbook -i hosts -s playbooks/spark-deployment.yml --private-key ~/.ssh
 + [npm install private github repositories by dependency in package.json](https://stackoverflow.com/questions/23210437/npm-install-private-github-repositories-by-dependency-in-package-json)
 
 
-+ Cloud Native
-  + Computing Foundation
-+ Docker
-  + Container
-+ Kubernetes
-  + Orchestration
-+ HELM
-  + Package and deply
-+ Prometheus
-  + Monitoring
-  + data store
-  + visualization
-    + graphit
-    + graphona
-      + dashboard build support
-      + alerts 
-+ Opentracing
-  + distributed tracing
-
-
-
-Google
-
-+ **Kubernetes**
-  + rewritten OS friendly Borg
-    + Borg
-      - containers
-  + written in Go
-  + moves you from dealing with machines into dealing with cluster
-+ **gRPC**
-  + rewritten Stubby but using HTTP2 and protocol buffer 3
-    + Stubby
-      - RPC between containers
 + Johny5
   + node for IoT
 
@@ -764,12 +804,12 @@ Videos
   + have business logic in network orchestrating
   + services have very dump message-pipe only possible to deliver message to the provided address
 + conitnuous delivery
-  + blue-green deployment
+  + **blue-green deployment**
   + phoenix services
 + distributed objects
   + idea to treat RPC as local calls
   + wrong, local calls do not break
-+ chaos-monkey
++ **chaos-monkey**
   + at netflix
   + a tool that randomly stop services
 + monoliths vs. micro-services
@@ -812,6 +852,19 @@ Videos
 
 
 
+# Containers
+
+## gVisor
+
++ [Open-sourcing gVisor, a sandboxed container runtime](https://cloudplatform.googleblog.com/2018/05/Open-sourcing-gVisor-a-sandboxed-container-runtime.html)
++ ​
+
+# PaaS
+
+## Networking
+
++   [THE CONTAINER NETWORKING LANDSCAPE: CNI FROM COREOS AND CNM FROM DOCKER](https://thenewstack.io/container-networking-landscape-cni-coreos-cnm-docker/)
+
 # Clouds
 
 ## Nextcloud vs ownCloud
@@ -819,4 +872,4 @@ Videos
 + https://project-management.zone/system/nextcloud,owncloud
 + https://nextcloud.com/blog/3-reasons-to-upgrade-your-owncloud-instance-to-nextcloud-and-how-easy-it-is/
 + https://nextcloud.com/compare/
-+ ​
+
