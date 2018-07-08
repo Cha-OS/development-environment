@@ -653,3 +653,28 @@ https://github.com/atom/atom/issues/6940
 - https://stackoverflow.com/questions/41497325/multiline-search-and-replace-in-atom-editor
   - `(.|\r?\n)*?`
 - https://github.com/atom/find-and-replace/issues/303
+
+### replacing with matched pattern selection
+
+To add `<` at the beginning of emails:
+
+```
+Sasha Rudan sasha.rudan@gmail.com>
+Sinisha Rudan sinisa.rudan@gmail.com>
+```
+
+**<u>Find</u>**:
+
+ ```
+\s([^\s]+\>)
+ ```
+
+ Meaning: **space** then **selection** of: no spaces ()one or more) finishing with  `>` 
+
+**<u>Replace with</u>**:
+
+```
+ <$1
+```
+
+Meaning: **`<`** then **first matched pattern**
